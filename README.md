@@ -1,2 +1,9 @@
--# LateX_Presentation
- -LateX presentation on what is LateX, its benefits and some implementation
+LateX_Presentation
+
+LateX presentation on what is LateX, its benefits and some implementation. 
+
+Project for Programming Language Concepts
+
+Authors: Mahmoud Saleh, Arshit Arora, Amar Waqas.
+
+---
