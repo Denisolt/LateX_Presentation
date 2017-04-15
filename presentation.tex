@@ -1,0 +1,147 @@
+\documentclass{beamer}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage{color}
+
+\definecolor{mygray}{rgb}{0.4,0.4,0.4}
+\definecolor{mygreen}{rgb}{0,0.8,0.6}
+\definecolor{myorange}{rgb}{1.0,0.4,0}
+
+\lstset{
+basicstyle=\footnotesize\sffamily\color{black},
+commentstyle=\color{mygray},
+numbers=left,
+numbersep=5pt,
+numberstyle=\tiny\color{mygray},
+keywordstyle=\color{mygreen},
+showspaces=false,
+showstringspaces=false,
+stringstyle=\color{myorange},
+tabsize=2
+}
+
+% February 23rd, 2017
+% Author: Denisolt Shakhbulatov, Mahmoud Saleh, Arshit Arora, Amar Waqas
+
+\begin{document}
+\title { \Huge\LaTeX  }
+\author{Denisolt Shakhbulatov, Mahmoud Saleh, Arshit Arora, Amar Waqas}
+\date{February 23rd, 2017}
+
+\frame{\titlepage} 
+
+\frame{\frametitle{Index}\tableofcontents} 
+
+
+\section{Introduction} 
+\subsection{About \LaTeX}
+\frame{\frametitle{About \LaTeX} 
+\LaTeX  , which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech» or «Bertolt Brecht»), is a document preparation system for high-quality typesetting. It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing.
+
+\LaTeX   is not a word processor! Instead,  \LaTeX   encourages authors not to worry too much about the appearance of their documents but to concentrate on getting the right content.}
+\subsection{Features}
+\frame{\frametitle{ \LaTeX   Features}
+\begin{itemize}
+\item Typesetting journal articles, technical reports, books, and slide presentations.
+\item Control over large documents containing sectioning, cross-references, tables and figures.
+\item Typesetting of complex mathematical formulas.
+\item Advanced typesetting of mathematics with AMS- \LaTeX  .
+\item Automatic generation of bibliographies and indexes.
+\item Multi-lingual typesetting.
+\item Inclusion of artwork, and process or spot colour.
+\item Using PostScript or Metafont fonts.
+\end{itemize} 
+}
+\subsection{Why \LaTeX}
+\frame{\frametitle{Why use \LaTeX} 
+LaTeX does a perfect job at helping writing proper mathematical papers. It provides easiest syntax for mathematical equations, that helps creating a proper organised scientific paper. Also LaTeX is highly customisable. You can create your own themes and apply them in your paper or presentation. Not only that, but LaTeX lets you easily generate graphs. It is commonly used to write IEEE format papers. 
+}
+
+
+\section{Section no. 2} 
+\subsection{Lists I}
+\frame{\frametitle{unnumbered lists}
+\begin{itemize}
+\item Introduction to  \LaTeX
+\item Course 2 
+\item Termpapers and presentations with \LaTeX 
+\item Beamer class
+\end{itemize} 
+}
+
+
+\section{Mathematics and Tables} 
+\subsection{Mathematics}
+
+\begin{frame}[fragile]
+\frametitle{Mathematical Equations}
+Mathematical equations can be written in LaTeX as well. Another useful tool of LaTeX is ability to create boxes
+Source Code:
+\linebreak
+  \lstset{language=[LaTeX]TeX}
+\begin{lstlisting}[basicstyle=\scriptsize,]
+$$\Pr\left[\sum_{i=1}^k X_i > c\right]\leq 2^{-\Omega(c^2k)}$$
+\linebreak
+
+\end{lstlisting}
+ 
+
+ 
+Output: 
+\linebreak
+\linebreak
+\fbox{%
+    \parbox{\textwidth}{%
+        $$\Pr\left[\sum_{i=1}^k X_i > c \right] 
+        \leq 2^{-\Omega(c^2 k)}$$
+    }%
+}
+
+\end{frame}
+\subsection{Tables}
+\frame{\frametitle{Tables}
+You can also create tables in LaTeX
+\linebreak \linebreak
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Name} & \textbf{Major} & \textbf{Year} \\
+\hline
+Denisolt Shakhbulatov & Computer Science & Sophomore \\
+\hline
+Arshit Arora & Computer Science & Sophomore \\
+\hline
+Mahmoud Saleh & Computer Science & Senior \\
+\hline
+Amar Waqas & Computer Science & Junior \\
+\hline
+\end{tabular}}
+
+\section{Conclusion}
+\subsection{Quotes from NYIT professors}
+\frame{\frametitle{Quotes}
+
+Dr. Anand Santhanakrishnan: \linebreak "The good thing about \LaTeX  is that it is written in ASCII, the user gets a file and compiles it this way the user does not get a virus - REU Summer 2016"
+\linebreak\linebreak
+Dr. Cecilia Dong: \linebreak
+ "You should be writing your research paper in \LaTeX"
+}
+
+\subsection{Bibliography}
+\frame{\frametitle{Bibliography}
+\begin{itemize}
+\item http://www.latex-project.org/about/
+\item https://www.cs.princeton.edu/courses/archive/spr10/cos433/Latex/latex-guide.pdf
+\end{itemize} 
+
+}
+
+\subsection{Thank you}
+\frame{
+
+\begin{center}
+\Huge Thank You
+\end{center}
+}
+
+\end{document}
